@@ -2,7 +2,7 @@
 let amigos = []
 
 function agregarAmigo() {
-    let input = document.getElementById("nombreAmigo");
+    let input = document.getElementById("amigo");
     let nombre = input.value.trim(); // Eliminar espacios en blanco al inicio y final.
 
     if (nombre === "") {
