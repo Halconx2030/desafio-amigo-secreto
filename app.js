@@ -22,11 +22,12 @@ function agregarAmigo() {
 
 function actualizarLista() {
     let lista = document.getElementById("listaAmigos");
-    lista.innerHTML = ""; // Limpiar lista antes de actualizar
+    lista.innerHTML = ""; // Limpiar la lista antes de actualizar
 
-    amigos.forEach((amigo) => {
+    for (let i = 0; i < amigos.length; i++) { // Usamos un bucle for
         let li = document.createElement("li");
-        li.textContent = amigo;
-        lista.appendChild(li);
-    });
+        li.textContent = amigos[i]; // Agregamos el nombre del amigo
+        lista.appendChild(li); // Añadimos el <li> a la lista
+    }
 }
+
